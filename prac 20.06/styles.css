@@ -1,0 +1,37 @@
+.heading{
+    color: rgb(235, 70, 166);
+}
+.my-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    
+}
+.p-padding{
+    padding: 0 20px 0 20px;
+}
+
+.hed{
+  position: relative; 
+  color: brown; 
+}
+.spn{
+    position:absolute;
+    color:black;
+    top: 0;
+    left: 20px;
+    background-color: aquamarine;
+    padding: 0px 5px 0px 5px;
+}
+.nav-bar{
+    display: block;
+    display: flex;
+    
+    
+}
+.nav-bar>a>li{
+    color: black;
+    margin-right: 15px;
+    
+
+    
+}

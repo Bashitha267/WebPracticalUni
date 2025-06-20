@@ -1,0 +1,26 @@
+/* .nav-bar{
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    
+}
+.nav-bar>li{
+    margin-right: 15px;
+    text-decoration: none;
+}
+.nav-bar>li>a{
+    text-decoration: none;
+    color: black;
+    font-family:  monospace;
+    font-size: 22px;
+    font-weight: 400;
+}
+.nav-bar>li>a:hover{
+    color: brown;
+} */
+
+.main-div{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 10px;
+}
