@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+   
     <title>Index</title>
     <style>
     #myDiv{
@@ -43,6 +43,36 @@
     <p id="output1"></p>
     <p id="output2"></p>
 
+   </div>
+   <div>Form</div>
+   <form>
+    <label >Select a country</label>
+    <select id="country" onchange="handleChange()">
+    <option value="USA">USA</option>
+    <option value="UK">UK</option>
+    <option value="Canada">Canada</option>
+</select>
+<p id="countryOutput"></p>
+   </form>
+   <form style="border: solid 5px gray; width: 320px; padding: 15px;" onsubmit="return validateForm()" id="login">
+    <div style="justify-items: center;text-align: center; margin-top: 15px;margin-bottom: 15px;">Login</div>
+    <div style="display: flex;">
+        <label for="username">Username:</label>
+    <input type="text" required id="username">
+    </div>
+    <div style="display: flex;margin-bottom: 12px;margin-top: 15px;">
+        <label for="username">Password:</label>
+    <input type="password" id="password">
+    </div>
+    <div style="display: flex; justify-content: center; justify-items: center; ">
+        <button type="submit" value="submit">Submit</button>
+    </div>
+   </form>
+   <div><p id="formOutput"></p></div>
+   <div id="searching">
+    <label for="search">Search:</label>
+    <input type="text" id="search" oninput="handleInput()">
+    <p id="textOut"></p>
    </div>
    <script src="./index.js"></script>
 </body>

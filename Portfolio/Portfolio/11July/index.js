@@ -4,6 +4,7 @@ const mydiv=document.getElementById("myDiv")
 const output=document.getElementById("output")
 const output1=document.getElementById("output1")
 const output2=document.getElementById("output2")
+const outputCountry=document.getElementById("countryOutput")
 var handleClick=()=>{
     alert("button clicked")
 }
@@ -43,3 +44,24 @@ document.addEventListener('keydown',(event)=>{
 document.addEventListener('keypress',(event)=>{
     output2.innerHTML="Key pressed:"+event.key
 })
+
+const handleChange=(event)=>{
+    
+    var selectedCountry=document.getElementById("country").value;
+    outputCountry.textContent=selectedCountry
+}
+const validateForm=(event)=>{
+    event.preventDefault();
+    var username=document.getElementById("username").value
+    var password=document.getElementById("password").value
+    const formout=document.getElementById("formOutput")
+    formout.innerHTML="Username:"+username+"<br>"+"Password:"+password
+}
+document.getElementById("login").addEventListener('submit',validateForm)
+
+const textOut=document.getElementById("textOut")
+
+const handleInput=(event)=>{
+    const search=document.getElementById("search").value
+    textOut.innerHTML=search
+}
